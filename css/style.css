@@ -13,6 +13,12 @@ nav {
 	height: 65px;
 }
 
+.råvara-logo {
+	font-family: Impact, sans-serif;
+	font-size: 35px;
+	color: white;
+}
+
 nav a {
 	text-decoration: none;
 	color: white;
@@ -55,12 +61,12 @@ nav a {
 
 /* I den här stilregeln kan du sätta hover-utseende på länkarna i menyn.*/
 nav a:hover {
-	color: rgb(178, 220, 248);
+	color: rgb(83, 82, 82);
 }
 
-.push-right {
-	margin-left: auto;
-	margin-right: 10px;
+.push-left {
+	margin-right: auto;
+	margin-left: 20px;
 }
 
 #mobile-menu-icon {
