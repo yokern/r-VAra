@@ -26,6 +26,10 @@ nav ul a {
 	transition: 0.3s linear;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 .menu {
 	height: 65px;
 	list-style: none;
@@ -79,7 +83,7 @@ nav ul a:hover {
 }
 
 #mobile-menu-icon:hover {
-	color: rgb(178, 220, 248);
+	color: rgb(83, 82, 82);
 }
 
 /*
@@ -92,7 +96,7 @@ nav ul a:hover {
 	  display: block; /* visar hamburger-ikonen */
 	}
   
-	nav a {
+	nav ul a {
 	  display: none; /* döljer listan med de "vanliga" meny-länkarna */
 	}
 	
