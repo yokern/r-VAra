@@ -81,3 +81,23 @@ nav ul a:hover {
 #mobile-menu-icon:hover {
 	color: rgb(178, 220, 248);
 }
+
+/*
+  Den här media queryn bestämmmer hur sidan ser ut på skärmar
+  som är mindre än 600px breda. Det vill säga de flesta mobiler i
+  stående läge. 
+*/
+@media screen and (max-width: 600px) {
+	#mobile-menu-icon {
+	  display: block; /* visar hamburger-ikonen */
+	}
+  
+	nav a {
+	  display: none; /* döljer listan med de "vanliga" meny-länkarna */
+	}
+	
+	img {
+	  max-width: 90%;
+	}
+  
+  }
