@@ -2,95 +2,110 @@
 
 * {
 	margin: 0;
+	padding: 0;
 	font-family: 'Inter', sans-serif;
 }
 
-nav {
+header {
+	background-color: black;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+.navbar {
+	min-height: 70px;
 	display: flex;
-	background-color: rgb(0, 0, 0);
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	height: 65px;
+	padding: 0 24px;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .råvara-logo a {
 	font-family: Impact, sans-serif;
-	font-size: 35px;
-	color: white;
+	font-size: 2rem;
 	text-decoration: none;
 }
-
-nav ul a {
+.nav-link {
 	text-decoration: none;
-	color: white;
-	transition: 0.3s linear;
-}
-
-.mobile-menu {
-	display: none;
-}
-
-.menu {
-	height: 65px;
-	list-style: none;
-	display: flex;
-	flex: 100%;
-	font-family: 'Ubuntu';
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-right: 20px;
-	align-items: center;
-	max-width: 1000px;
-}
-
-.menu-item {
-	margin-left: 50px;
-	text-align: center;
+	transition: 0.7s ease;
 }
 
 /* Den här stilregeln beskriver hur en länk ser ut i det menu-item som är active.*/
-.menu-item.active a {
+.nav-item.active a {
 	color: rgb(255, 106, 0);
 }
 
 /* I den här stilregeln kan du sätta hover-utseende på länkarna i menyn.*/
-nav ul a:hover {
+.nav-link:hover {
 	color: rgb(255, 106, 0);
 }
 
-.push-left {
-	margin-right: auto;
-	margin-left: 20px;
-}
-
-#mobile-menu-icon {
-	margin-left: auto; /* gör att hamburgerikonen ligger så långt till höger som möjligt*/
-	margin-right: 20px;
+.hamburger {
 	display: none;
-	color: white;
-	transition: 0.3s linear;
+	cursor: pointer;
 }
 
-#mobile-menu-icon:hover {
-	color: rgb(83, 82, 82);
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white
 }
-
 /*
   Den här media queryn bestämmmer hur sidan ser ut på skärmar
   som är mindre än 600px breda. Det vill säga de flesta mobiler i
   stående läge. 
 */
-@media screen and (max-width: 600px) {
-	#mobile-menu-icon {
+@media screen and (max-width: 768px) {
+	.hamburger {
 	  display: block; /* visar hamburger-ikonen */
 	}
-  
-	nav ul a {
-	  display: none; /* döljer listan med de "vanliga" meny-länkarna */
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
 	}
-	
-	img {
-	  max-width: 90%;
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg)
 	}
   
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: black;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.nav-item {
+		margin: 16px 0;
+	}
+
+	.nav-menu.active {
+		left: 0;
+	}
   }
