@@ -47,26 +47,15 @@ nav ul a {
 	margin-left: 50px;
 	text-align: center;
 }
-.menu-item.active {
-	height: 100%;
-	background-color: white;
-	display: flex;
-}
 
 /* Den här stilregeln beskriver hur en länk ser ut i det menu-item som är active.*/
 .menu-item.active a {
-	border-style: solid;
-	border-color: white;
-	color: black;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: auto;
-	margin-bottom: auto;
+	color: rgb(255, 106, 0);
 }
 
 /* I den här stilregeln kan du sätta hover-utseende på länkarna i menyn.*/
 nav ul a:hover {
-	color: rgb(83, 82, 82);
+	color: rgb(255, 106, 0);
 }
 
 .push-left {
