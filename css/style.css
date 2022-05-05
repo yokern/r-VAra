@@ -67,8 +67,14 @@ a {
 	margin: 5px auto;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-color: white
+	background-color: white;
 }
+
+.menu-spacer {
+	width: 87.16px;
+	height: 38.67;
+}
+
 /*
   Den här media queryn bestämmmer hur sidan ser ut på skärmar
   som är mindre än 600px breda. Det vill säga de flesta mobiler i
