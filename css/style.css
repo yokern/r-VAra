@@ -75,6 +75,33 @@ a {
 	height: 38.67;
 }
 
+.booking-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.input-container {
+	margin: 10px;
+}
+
+.input-container input {
+	width: 200px;
+	height: 35px;
+	font-size: 16px;
+}
+
+.input-container select {
+	width: 430px;
+	height: 35px;
+}
+
 /*
   Den här media queryn bestämmmer hur sidan ser ut på skärmar
   som är mindre än 600px breda. Det vill säga de flesta mobiler i
