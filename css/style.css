@@ -75,6 +75,20 @@ a {
 	height: 38.67;
 }
 
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/råvara1.PNG");
+	height: 1000px;
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	color: white;
+}
+
 .booking-form {
 	display: flex;
 	flex-direction: column;
