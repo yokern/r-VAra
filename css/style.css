@@ -6,6 +6,10 @@
 	font-family: 'Inter', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 header {
 	background-color: black;
 }
@@ -18,6 +22,12 @@ a {
 	text-decoration: none;
 	color: white;
 }
+
+#down {
+	margin-top: 100%;
+	padding-bottom: 25%;
+}
+
 .navbar {
 	min-height: 70px;
 	display: flex;
@@ -130,7 +140,7 @@ a {
 .center-heading {
 	justify-content: center;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 70px;
 	margin-bottom: 20px;
 	font-size: 40px;
 }
@@ -143,6 +153,46 @@ a {
 	border-width: 2px;
 	border-color: black;
 	border-style: solid;
+}
+
+footer {
+	background-color: black;
+	margin-top: 400px;
+	height: 350px;
+}
+
+.footer-container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+footer p {
+	color: white;
+	font-size: 20px;
+}
+
+footer h1 {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.footer-content1 {
+	text-align: left;
+}
+
+.footer-content1 h2 {
+	color: white;
+
+}
+
+.footer-content2 {
+	text-align: right;
 }
 
 /*
