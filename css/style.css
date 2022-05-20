@@ -86,7 +86,7 @@ a {
 
 .menu-spacer {
 	width: 87.16px;
-	height: 38.67;
+	height: 38.67px;
 }
 
 .hero {
@@ -265,5 +265,22 @@ td {
 
 	.nav-menu.active {
 		left: 0;
+		position: absolute;
+	}
+
+	.footer-container {
+		max-width: 70%;
+	}
+
+	footer div div p {
+		font-size: 80%;
+	}
+
+	footer div div h2 {
+		font-size: 80%;
+	}
+ 	
+	.booking-form {
+		width: 70%;
 	}
   }
