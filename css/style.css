@@ -112,6 +112,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 20px;
 }
 
 .flexRow {
@@ -128,6 +129,7 @@ a {
 	width: 200px;
 	height: 35px;
 	font-size: 16px;
+
 }
 
 .input-container input[type=submit] {
@@ -280,7 +282,19 @@ td {
 		font-size: 80%;
 	}
  	
+	.flexRow {
+		flex-direction: column;
+	}
+
 	.booking-form {
-		width: 70%;
+		padding: 0px;
+	}
+
+	select {
+		max-width: 204px;
+	}
+
+	textarea {
+		max-width: 204px;
 	}
   }
